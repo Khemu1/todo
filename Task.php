@@ -2,7 +2,7 @@
 /**
  * @var PDO $pdo
  */
-require_once "connection.php";
+require_once "DB.php";
 
 //$pdo->
 
