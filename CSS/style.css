@@ -1,0 +1,161 @@
+body {
+  background: #ffff;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+.container {
+  display: grid;
+  grid: 0.35fr / repeat(1, 1fr);
+  gap: 50px;
+}
+.add-area {
+  background-color: rgba(255, 255, 255, 0.864);
+  width: 499.992px;
+  height: 100px;
+  display: flex;
+  gap: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  padding-inline: 2.2rem;
+}
+.add-area form {
+  display: flex;
+  gap: 10px;
+}
+.add-field {
+  width: max-content;
+  height: max-content;
+}
+.add-field input {
+  background-color: unset;
+  height: 40px;
+  width: 300px;
+  border-width: 3px;
+  border-radius: 10px;
+  border-color: rgba(32, 15, 15, 0.673);
+  border-style: solid; /* Add this line */
+}
+
+.add-field input:focus-visible {
+  outline: none;
+}
+.add-field input:focus-visible {
+  outline: rgba(32, 15, 15, 0.673);
+}
+.add-field input:hover {
+  transition: border-color 250ms ease-in-out;
+  border-color: red;
+  cursor: pointer;
+}
+.add-field input:active {
+  transition: border-color 0s ease-in-out;
+  border-color: rgba(32, 15, 15, 0.673);
+}
+input[type="text"] {
+  padding-left: 10px; /*this  will move the text in the input field*/
+}
+.add-button {
+  height: max-content;
+  width: max-content;
+  background: transparent;
+}
+.add-button button {
+  border: none;
+  border-radius: 40px 40px;
+  width: 70px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.add-button button:hover {
+  transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
+  background-color: red;
+  color: white;
+}
+.add-button button:focus {
+  transition: none;
+  background-color: white;
+  color: black;
+}
+.list-area form {
+  background-color: rgba(255, 255, 255, 0.864);
+  min-width: 500px;
+  height: max-content;
+  display: grid;
+  gap: 19px;
+  grid: 1fr/1fr;
+  border-radius: 25px;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+.selected {
+  transition: background-color 250ms ease-in-out;
+  background-color: rgba(98, 96, 96, 0.663);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 0px solid transparent;
+  border-radius: 20px;
+  padding: 5px 10px;
+  height: fit-content;
+}
+.list-container {
+  transition: background-color 250ms ease-in-out;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 0.3px solid #000000a9;
+  border-radius: 20px;
+  padding: 5px 10px;
+  height: fit-content;
+}
+
+.list {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  height: max-content;
+  align-items: center;
+  min-width: 250px;
+  text-overflow: ellipsis;
+  overflow-x: hidden;
+}
+.list-container:has(.list):hover {
+  transition: background-color 250ms ease-in-out;
+  background-color: rgba(98, 96, 96, 0.663);
+  cursor: pointer; /*selected*/
+}
+.selected:has(.list):hover {
+  transition: background-color 250ms ease-in-out;
+  background-color: rgb(255 255 255);
+
+  cursor: pointer; /*selected*/
+}
+
+.delete-button {
+  border: none;
+  border-radius: 40px 40px;
+  width: 70px;
+  height: 40px;
+  cursor: pointer;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+  text-decoration: none;
+  color: white;
+}
+
+.delete-button:hover {
+  transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
+  background-color: #1a1919;
+  color: white;
+}
